@@ -23,3 +23,12 @@ curl -s -o SepoliaRPC.sh https://raw.githubusercontent.com/noderguru/Ethereum-Te
 ```bash
 curl -s -o HoodiRPC.sh https://raw.githubusercontent.com/noderguru/Ethereum-Testnet_RPCs/main/HoodiRPC.sh && chmod +x HoodiRPC.sh && ./HoodiRPC.sh
 ```
+## 📡 RPC Access (default ports)
+
+| Network   | HTTP RPC Port | WS RPC Port | Example Endpoint                       |
+|-----------|---------------|-------------|----------------------------------------|
+| Holesky   | 48545         | 48546       | http://YOUR_SERVER_IP:48545            |
+| Sepolia   | 58545         | 58546       | http://YOUR_SERVER_IP:58545            |
+| Hoodi     | 68545         | 68546       | http://YOUR_SERVER_IP:68545            |
+
+> 🔄 WebSocket endpoints use the same IP with `ws://` and their respective ports.
