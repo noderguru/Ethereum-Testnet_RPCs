@@ -15,3 +15,7 @@
 ```bash
 curl -s -o HoleskyRPC.sh https://raw.githubusercontent.com/noderguru/Ethereum-Testnet_RPCs/main/HoleskyRPC.sh && chmod +x HoleskyRPC.sh && ./HoleskyRPC.sh
 ```
+## Sepolia
+```bash
+curl -s -o SepoliaRPC.sh https://raw.githubusercontent.com/noderguru/Ethereum-Testnet_RPCs/main/SepoliaRPC.sh && chmod +x SepoliaRPC.sh && ./SepoliaRPC.sh
+```
