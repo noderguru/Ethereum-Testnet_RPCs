@@ -55,12 +55,12 @@ case $choice in
 
     sudo -u geth_hoodi cp /home/geth_hoodi/eth-docker/default.env /home/geth_hoodi/eth-docker/.env
     sudo -u geth_hoodi sed -i 's/COMPOSE_FILE=.*/COMPOSE_FILE=teku-cl-only.yml:geth.yml:grafana.yml:grafana-shared.yml:el-shared.yml/g' /home/geth_hoodi/eth-docker/.env
-    sudo -u geth_hoodi sed -i 's/EL_P2P_PORT=.*/EL_P2P_PORT=70303/g' /home/geth_hoodi/eth-docker/.env
-    sudo -u geth_hoodi sed -i 's/CL_P2P_PORT=.*/CL_P2P_PORT=79000/g' /home/geth_hoodi/eth-docker/.env
-    sudo -u geth_hoodi sed -i 's/CL_QUIC_PORT=.*/CL_QUIC_PORT=79001/g' /home/geth_hoodi/eth-docker/.env
-    sudo -u geth_hoodi sed -i 's/GRAFANA_PORT=.*/GRAFANA_PORT=63000/g' /home/geth_hoodi/eth-docker/.env
-    sudo -u geth_hoodi sed -i 's/EL_RPC_PORT=.*/EL_RPC_PORT=68545/g' /home/geth_hoodi/eth-docker/.env
-    sudo -u geth_hoodi sed -i 's/EL_WS_PORT=.*/EL_WS_PORT=68546/g' /home/geth_hoodi/eth-docker/.env
+    sudo -u geth_hoodi sed -i 's/EL_P2P_PORT=.*/EL_P2P_PORT=40303/g' /home/geth_hoodi/eth-docker/.env
+    sudo -u geth_hoodi sed -i 's/CL_P2P_PORT=.*/CL_P2P_PORT=49000/g' /home/geth_hoodi/eth-docker/.env
+    sudo -u geth_hoodi sed -i 's/CL_QUIC_PORT=.*/CL_QUIC_PORT=49001/g' /home/geth_hoodi/eth-docker/.env
+    sudo -u geth_hoodi sed -i 's/GRAFANA_PORT=.*/GRAFANA_PORT=54000/g' /home/geth_hoodi/eth-docker/.env
+    sudo -u geth_hoodi sed -i 's/EL_RPC_PORT=.*/EL_RPC_PORT=59545/g' /home/geth_hoodi/eth-docker/.env
+    sudo -u geth_hoodi sed -i 's/EL_WS_PORT=.*/EL_WS_PORT=59546/g' /home/geth_hoodi/eth-docker/.env
     sudo -u geth_hoodi sed -i 's/NETWORK=.*/NETWORK=hoodi/g' /home/geth_hoodi/eth-docker/.env
     sudo -u geth_hoodi sed -i 's|CHECKPOINT_SYNC_URL=.*|CHECKPOINT_SYNC_URL="https://checkpoint-sync.hoodi.ethpandaops.io"|g' /home/geth_hoodi/eth-docker/.env
     sudo -u geth_hoodi sed -i 's/FEE_RECIPIENT=.*/FEE_RECIPIENT=0xd9264738573E25CB9149de0708b36527d56B59bd/g' /home/geth_hoodi/eth-docker/.env
@@ -72,19 +72,19 @@ case $choice in
         SERVER_IP=$(curl -4 ifconfig.me)
         echo -e "${CYAN}To check if your RPC is working and synced, follow these steps:${NC}\n"
         echo "1. Open Grafana in your browser:"
-        echo -e "   ${YELLOW}http://${SERVER_IP}:63000${NC}"
+        echo -e "   ${YELLOW}http://${SERVER_IP}:54000${NC}"
         echo "2. Use the following credentials to log in:"
         echo -e "   ${YELLOW}Username: admin${NC}"
         echo -e "   ${YELLOW}Password: admin${NC}"
         echo "3. Grafana will ask you to change the password – do it."
         echo "4. Go to:"
-        echo -e "   ${YELLOW}Dashboards > Home Staking Dashboard${NC}"
+        echo -e "   ${YELLOW}Dashboards > Eth Docker > Home Staking Dashboard${NC}"
         echo "5. Wait until you see:"
         echo -e "   ${GREEN}Consensus = Synced${NC} and ${GREEN}Execution = Synced${NC}"
         echo -e "\n${GREEN}✅ Your Hoodi RPC is now ready for action.${NC}"
         echo -e "${CYAN}Your RPC endpoints:${NC}"
-        echo -e "◦ HTTP: ${YELLOW}http://${SERVER_IP}:68545${NC}"
-        echo -e "◦ WS:   ${YELLOW}ws://${SERVER_IP}:68546${NC}"
+        echo -e "◦ HTTP: ${YELLOW}http://${SERVER_IP}:59545${NC}"
+        echo -e "◦ WS:   ${YELLOW}ws://${SERVER_IP}:59546${NC}"
         echo -e "${GREEN}⭐️ If you found this helpful, don't forget to star the repo: https://github.com/noderguru/Ethereum-Testnet_RPCs 😎${NC}"
     ;;
   2)
