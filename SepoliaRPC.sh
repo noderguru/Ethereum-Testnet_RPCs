@@ -83,6 +83,9 @@ case $choice in
         echo "5. Wait until you see:"
         echo -e "   ${GREEN}Consensus = Synced${NC} and ${GREEN}Execution = Synced${NC}"
         echo -e "\n${GREEN}✅ Your Sepolia RPC is now ready for action.${NC}"
+        echo -e "${CYAN}Your RPC endpoints:${NC}"
+        echo -e "◦ HTTP: ${YELLOW}http://${SERVER_IP}:58545${NC}"
+        echo -e "◦ WS:   ${YELLOW}ws://${SERVER_IP}:58546${NC}"
         echo -e "${GREEN}⭐️ If you found this helpful, don't forget to star the repo: https://github.com/noderguru/Ethereum-Testnet_RPCs 😎${NC}"
         ;;
         
