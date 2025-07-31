@@ -82,6 +82,7 @@ case $choice in
         echo "5. Wait until you see:"
         echo -e "   ${GREEN}Consensus = Synced${NC} and ${GREEN}Execution = Synced${NC}"
         echo -e "\n${GREEN}✅ Your Holesky RPC is now ready for action.${NC}"
+        echo -e "${GREEN}⭐️ If you found this helpful, don't forget to star the repo: https://github.com/noderguru/Ethereum-Testnet_RPCs 😎${NC}"
         ;;
 
     2)
