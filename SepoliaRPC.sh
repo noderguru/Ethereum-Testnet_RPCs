@@ -79,7 +79,7 @@ case $choice in
         echo -e "   ${YELLOW}Password: admin${NC}"
         echo "3. Grafana will ask you to change the password – do it."
         echo "4. Go to:"
-        echo -e "   ${YELLOW}Dashboards > Home Staking Dashboard${NC}"
+        echo -e "   ${YELLOW}Dashboards > Eth Docker > Home Staking Dashboard${NC}"
         echo "5. Wait until you see:"
         echo -e "   ${GREEN}Consensus = Synced${NC} and ${GREEN}Execution = Synced${NC}"
         echo -e "\n${GREEN}✅ Your Sepolia RPC is now ready for action.${NC}"
