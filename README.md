@@ -32,3 +32,6 @@ curl -s -o HoodiRPC.sh https://raw.githubusercontent.com/noderguru/Ethereum-Test
 | Hoodi     | 59545         | 59546       | http://YOUR_SERVER_IP:59545            |
 
 > 🔄 WebSocket endpoints use the same IP with `ws://` and their respective ports.
+
+<img width="1831" height="841" alt="image" src="https://github.com/user-attachments/assets/482b5182-567d-4109-aa9e-433c9db4ab56" />
+
